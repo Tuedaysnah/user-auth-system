@@ -1,9 +1,9 @@
 <?php
 session_start();
-require_once '../config/db_connection.php';
+require_once 'db_connection.php';
 
 if (!isset($_SESSION['2fa'])) {
-    header("Location: /public/login.html");
+    header("Location: login.html");
     exit();
 }
 
